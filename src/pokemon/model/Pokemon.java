@@ -37,6 +37,93 @@ public abstract class Pokemon
 		
 		return pokemonInfo;
 	}
-	
+
+	/**
+	 * @return the healthPoints
+	 */
+	public int getHealthPoints()
+	{
+		return healthPoints;
+	}
+
+	/**
+	 * @param healthPoints the healthPoints to set
+	 */
+	public void setHealthPoints(int healthPoints)
+	{
+		this.healthPoints = healthPoints;
+	}
+
+	/**
+	 * @return the attackPoints
+	 */
+	public int getAttackPoints()
+	{
+		return attackPoints;
+	}
+
+	/**
+	 * @param attackPoints the attackPoints to set
+	 */
+	public void setAttackPoints(int attackPoints)
+	{
+		this.attackPoints = attackPoints;
+	}
+
+	/**
+	 * @return the enhancementModifier
+	 */
+	public double getEnhancementModifier()
+	{
+		return enhancementModifier;
+	}
+
+	/**
+	 * @param enhancementModifier the enhancementModifier to set
+	 */
+	public void setEnhancementModifier(double enhancementModifier)
+	{
+		this.enhancementModifier = enhancementModifier;
+	}
+
+	/**
+	 * @return the name
+	 */
+	public String getName()
+	{
+		return name;
+	}
+
+	/**
+	 * @param name the name to set
+	 */
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+
+	/**
+	 * @return the canEvolve
+	 */
+	public boolean isCanEvolve()
+	{
+		return canEvolve;
+	}
+
+	/**
+	 * @param canEvolve the canEvolve to set
+	 */
+	public void setCanEvolve(boolean canEvolve)
+	{
+		this.canEvolve = canEvolve;
+	}
+
+	/**
+	 * @return the number
+	 */
+	public int getNumber()
+	{
+		return number;
+	}
 	
 }
