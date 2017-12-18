@@ -9,25 +9,21 @@ public class Soggoth extends Pokemon implements Psychic
 		// TODO Auto-generated constructor stub
 	}
 
-	@Override
 	public void actionMindControl(int type)
 	{
-		// TODO Auto-generated method stub
-		
+		System.out.println("Thing is Mindcontrolled");
 	}
 
-	@Override
 	public int actionSleep()
 	{
-		// TODO Auto-generated method stub
-		return 0;
+		int timeAsleep = 0;
+		return timeAsleep;
 	}
 
-	@Override
 	public int actionMindCrush()
 	{
-		// TODO Auto-generated method stub
-		return 0;
+		int damage = 0;
+		return damage;
 	}
 
 }

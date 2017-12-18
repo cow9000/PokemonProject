@@ -11,22 +11,26 @@ public class Shaarji extends Pokemon implements Poison
 	@Override
 	public boolean actionKill(int pokemonHealth)
 	{
-		// TODO Auto-generated method stub
+		
+		boolean targetDead = true;
+		
+		if(pokemonHealth < 50)
+			return targetDead;
+		
 		return false;
 	}
 
 	@Override
 	public int actionVenomousBite()
 	{
-		// TODO Auto-generated method stub
+		
 		return 0;
 	}
 
 	@Override
 	public void actionWeaken()
 	{
-		// TODO Auto-generated method stub
-		
+		System.out.println("Target is weakened");
 	}
 
 }

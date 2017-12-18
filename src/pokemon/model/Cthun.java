@@ -9,7 +9,7 @@ public class Cthun extends Pokemon implements Psychic, Dark
 
 	public void actionConceal()
 	{
-		
+		System.out.print("CONCEALED");
 	}
 
 	public boolean actionConfuse()
@@ -28,8 +28,7 @@ public class Cthun extends Pokemon implements Psychic, Dark
 
 	public void actionMindControl(int type)
 	{
-		
-		
+		System.out.println("Thing is Mindcontrolled");
 	}
 
 	public int actionSleep()

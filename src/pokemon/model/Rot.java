@@ -8,19 +8,18 @@ public class Rot extends Pokemon implements Dark
 
 	public void actionConceal()
 	{
-		// TODO Auto-generated method stub
 		
 	}
 
 	public boolean actionConfuse()
 	{
-		// TODO Auto-generated method stub
-		return false;
+		boolean isConfused = false;
+		return isConfused;
 	}
 
 	public int actionBlackHole()
 	{
-		// TODO Auto-generated method stub
-		return 0;
+		int damage = 0;
+		return damage;
 	}
 }
