@@ -8,7 +8,7 @@ public class Rot extends Pokemon implements Dark
 
 	public void actionConceal()
 	{
-		
+		System.out.print("CONCEALED");
 	}
 
 	public boolean actionConfuse()
