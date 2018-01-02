@@ -19,10 +19,10 @@ public class Cthun extends Pokemon implements Psychic, Dark
 	
 	
 	protected void setup() {
-		this.setAttackPoints(10);
+		this.setAttackPoints(120);
 		this.setCanEvolve(true);
-		this.setEnhancementModifier(.70);
-		this.setHealthPoints(123);
+		this.setEnhancementModifier(.94);
+		this.setHealthPoints(120);
 	}
 
 	public void actionConceal()

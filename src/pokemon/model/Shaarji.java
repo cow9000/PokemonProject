@@ -18,10 +18,10 @@ public class Shaarji extends Pokemon implements Poison
 	}
 	
 	protected void setup() {
-		this.setAttackPoints(10);
+		this.setAttackPoints(280);
 		this.setCanEvolve(true);
-		this.setEnhancementModifier(.70);
-		this.setHealthPoints(123);
+		this.setEnhancementModifier(.23);
+		this.setHealthPoints(12);
 	}
 
 	@Override

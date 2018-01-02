@@ -19,9 +19,9 @@ public class Mukla extends Pokemon implements Dark
 	
 	
 	protected void setup() {
-		this.setAttackPoints(10);
+		this.setAttackPoints(50);
 		this.setCanEvolve(true);
-		this.setEnhancementModifier(.70);
+		this.setEnhancementModifier(.64);
 		this.setHealthPoints(123);
 	}
 	

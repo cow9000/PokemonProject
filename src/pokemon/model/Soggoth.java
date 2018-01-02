@@ -18,10 +18,10 @@ public class Soggoth extends Pokemon implements Psychic
 	}
 	
 	protected void setup() {
-		this.setAttackPoints(10);
+		this.setAttackPoints(23);
 		this.setCanEvolve(true);
-		this.setEnhancementModifier(.70);
-		this.setHealthPoints(123);
+		this.setEnhancementModifier(1.10);
+		this.setHealthPoints(1024);
 	}
 
 	public void actionMindControl(int type)

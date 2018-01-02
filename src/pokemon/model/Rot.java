@@ -18,10 +18,10 @@ public class Rot extends Pokemon implements Dark
 	
 	
 	protected void setup() {
-		this.setAttackPoints(10);
+		this.setAttackPoints(20);
 		this.setCanEvolve(true);
-		this.setEnhancementModifier(.70);
-		this.setHealthPoints(123);
+		this.setEnhancementModifier(.77);
+		this.setHealthPoints(236);
 	}
 
 	public void actionConceal()

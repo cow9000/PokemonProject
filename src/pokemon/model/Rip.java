@@ -19,10 +19,11 @@ public class Rip extends Rot
 	
 	@Override
 	protected void setup() {
-		this.setAttackPoints(10);
+		super.setup();
+		this.setAttackPoints(219);
 		this.setCanEvolve(true);
-		this.setEnhancementModifier(.70);
-		this.setHealthPoints(123);
+		this.setEnhancementModifier(1.34);
+		this.setHealthPoints(3259);
 	}
 	
 	public void actionConceal()
