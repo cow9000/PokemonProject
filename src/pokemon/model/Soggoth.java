@@ -3,10 +3,25 @@ package pokemon.model;
 public class Soggoth extends Pokemon implements Psychic
 {
 
-	public Soggoth(int number, String name)
-	{
-		super(number, name);
-		// TODO Auto-generated constructor stub
+	public Soggoth() {
+		super (6,"Soggoth");
+		setup();
+	}
+	public Soggoth(String name) {
+		super(6, name);
+		setup();
+	}
+	
+	public Soggoth(int number, String name) {
+		super(number,name);
+		setup();
+	}
+	
+	protected void setup() {
+		this.setAttackPoints(10);
+		this.setCanEvolve(true);
+		this.setEnhancementModifier(.70);
+		this.setHealthPoints(123);
 	}
 
 	public void actionMindControl(int type)

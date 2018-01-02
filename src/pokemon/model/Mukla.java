@@ -3,8 +3,26 @@ package pokemon.model;
 public class Mukla extends Pokemon implements Dark
 {
 
+	public Mukla() {
+		super (2,"Mukla");
+		setup();
+	}
+	public Mukla(String name) {
+		super(2, name);
+		setup();
+	}
+	
 	public Mukla(int number, String name) {
 		super(number,name);
+		setup();
+	}
+	
+	
+	protected void setup() {
+		this.setAttackPoints(10);
+		this.setCanEvolve(true);
+		this.setEnhancementModifier(.70);
+		this.setHealthPoints(123);
 	}
 	
 	public void actionConceal() {

@@ -2,9 +2,27 @@ package pokemon.model;
 
 public class Cthun extends Pokemon implements Psychic, Dark
 {
+
+	public Cthun() {
+		super (1,"Cthun");
+		setup();
+	}
+	public Cthun(String name) {
+		super(1, name);
+		setup();
+	}
 	
 	public Cthun(int number, String name) {
 		super(number,name);
+		setup();
+	}
+	
+	
+	protected void setup() {
+		this.setAttackPoints(10);
+		this.setCanEvolve(true);
+		this.setEnhancementModifier(.70);
+		this.setHealthPoints(123);
 	}
 
 	public void actionConceal()
