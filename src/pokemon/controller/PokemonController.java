@@ -22,7 +22,7 @@ public class PokemonController
 	}
 	
 	public boolean isValidInteger(String input) {
-		if(input.matches("^-?[0-9]*$")) {
+		if(input.matches("-?\\d+")) {
 			
 		}
 		return true;
@@ -30,7 +30,7 @@ public class PokemonController
 	}
 	
 	public boolean isValidDouble(String input) {
-		if(input.matches("^-?[0-9]*$")) {
+		if(input.matches("-?\\d+")) {
 			return true;
 		}
 		return false;
