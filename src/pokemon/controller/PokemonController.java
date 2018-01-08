@@ -15,9 +15,6 @@ public class PokemonController
 {
 	private List<Pokemon> pokedex;
 	
-	public void start() {
-		
-	}
 	
 	public PokemonController(){
 		pokedex = new ArrayList<Pokemon>();
@@ -51,6 +48,16 @@ public class PokemonController
 			return true;
 		}
 		return false;
+	}
+	
+	public String [] convertPokedex() {
+		String [] names = new String [pokedex.size()];
+		
+		for(int i = 0 ; i < pokedex.size(); i++) {
+			names[i] = pokedex.get(i).getName();
+		}
+		
+		return names;
 	}
 
 }
