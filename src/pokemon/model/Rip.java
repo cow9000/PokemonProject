@@ -1,6 +1,6 @@
 package pokemon.model;
 
-public class Rip extends Rot
+public class Rip extends Rot implements Dark
 {
 
 	public Rip() {

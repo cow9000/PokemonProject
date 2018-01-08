@@ -16,7 +16,7 @@ public abstract class Pokemon
 		this.number = number;
 	}
 	
-	public final String[] getPokemonTypes() {
+	public String[] getPokemonTypes() {
 		String[] types = null;
 		ArrayList<String> parentType = new ArrayList<String>();
 		Class<?> currentClass = this.getClass();
