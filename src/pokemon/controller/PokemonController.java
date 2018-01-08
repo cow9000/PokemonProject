@@ -3,7 +3,13 @@ package pokemon.controller;
 import java.util.ArrayList;
 import java.util.List;
 
+import pokemon.model.Cthun;
+import pokemon.model.Mukla;
 import pokemon.model.Pokemon;
+import pokemon.model.Rip;
+import pokemon.model.Rot;
+import pokemon.model.Shaarji;
+import pokemon.model.Soggoth;
 
 public class PokemonController
 {
@@ -15,6 +21,17 @@ public class PokemonController
 	
 	public PokemonController(){
 		pokedex = new ArrayList<Pokemon>();
+		buildPokedex();
+		
+	}
+	
+	private void buildPokedex() {
+		pokedex.add(new Cthun("Cthun"));
+		pokedex.add(new Mukla(123123,"Mukla"));
+		pokedex.add(new Rip());
+		pokedex.add(new Rot());
+		pokedex.add(new Shaarji());
+		pokedex.add(new Soggoth());
 	}
 	
 	public List<Pokemon> getPokedex(){

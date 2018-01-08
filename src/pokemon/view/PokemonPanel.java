@@ -1,5 +1,6 @@
 package pokemon.view;
 
+import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
@@ -161,6 +162,16 @@ public class PokemonPanel extends JPanel
 		attackField.setText(appController.getPokedex().get(index).getAttackPoints() + "");
 		healthField.setText(appController.getPokedex().get(index).getHealthPoints() + "");
 		modifierField.setText(appController.getPokedex().get(index).getEnhancementModifier() + "");
+		
+		descriptionArea.setText(appController.getPokedex().get(index).toString());
+		
 	}
+	
+	private void setupComboBox()
+	{
+		//DefaultComboBoxModel pokemonModel = new DefaultComboBoxModel(appController.convertPokedex());
+		//pokedexDropdown.setModel(pokemonModel);
+	}
+	
 
 }
