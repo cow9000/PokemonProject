@@ -32,6 +32,8 @@ public class PokemonController
 		pokedex.add(new Rot());
 		pokedex.add(new Shaarji());
 		pokedex.add(new Soggoth());
+		
+		System.out.println(isValidInteger("v23"));
 	}
 	
 	public List<Pokemon> getPokedex(){
@@ -40,17 +42,23 @@ public class PokemonController
 	
 	public boolean isValidInteger(String input) {
 		if(input.matches("-?\\d+")) {
-			
+			return true;
 		}
-		return true;
+		return false;
 		
 	}
 	
 	public boolean isValidDouble(String input) {
-		if(input.matches("-?\\d+[.]?(\\d+)?")) {
-			return true;
+		try
+		{
+			Double.parseDouble(input);
 		}
-		return false;
+		catch(NumberFormatException e)
+		{
+			//not a double
+			return false;
+		}
+		return true;
 	}
 	
 	public String [] convertPokedex() {
