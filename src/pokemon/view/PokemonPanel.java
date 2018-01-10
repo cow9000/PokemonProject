@@ -169,6 +169,10 @@ public class PokemonPanel extends JPanel
 		appLayout.putConstraint(SpringLayout.NORTH, healthField, 10, SpringLayout.NORTH, this);
 		appLayout.putConstraint(SpringLayout.NORTH, numberField, 18, SpringLayout.SOUTH, healthField);
 		appLayout.putConstraint(SpringLayout.EAST, healthField, 0, SpringLayout.EAST, evolvableBox);
+		
+		updatePokedexInfo(0);
+		updateTypePanels();
+		repaint();
 	}
 	private void setupListeners() {
 		pokedexDropdown.addActionListener(new ActionListener() {
@@ -214,7 +218,10 @@ public class PokemonPanel extends JPanel
 	private void updateTypePanels() {
 		String[] types = appController.getPokedex().get(pokedexDropdown.getSelectedIndex()).getPokemonTypes();
 		
-		
+		firstType.setBackground(Color.white);
+		secondType.setBackground(Color.white);
+		thirdType.setBackground(Color.white);
+		fourthType.setBackground(Color.white);
 		if(types[0].equals("Dark")) {
 			firstType.setBackground(Color.BLACK);
 		}else if(types[0].equals("Poison")) {
