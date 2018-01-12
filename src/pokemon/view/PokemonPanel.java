@@ -189,7 +189,20 @@ public class PokemonPanel extends JPanel
 	}
 	
 	private void updateImage() {
-		iconLabel.setIcon(new ImageIcon(getClass().getResource("/pokemon/view/images/Cthun.jpeg")));
+		
+		if(((String) pokedexDropdown.getSelectedItem()).equals("Cthun")) {
+			iconLabel.setIcon(new ImageIcon(getClass().getResource("/pokemon/view/images/Cthun.jpeg")));
+		}else if(((String) pokedexDropdown.getSelectedItem()).equals("Mukla")) {
+			iconLabel.setIcon(new ImageIcon(getClass().getResource("/pokemon/view/images/Mukla.jpg")));
+		}else if(((String) pokedexDropdown.getSelectedItem()).equals("Rip")) {
+			iconLabel.setIcon(new ImageIcon(getClass().getResource("/pokemon/view/images/Rip.png")));
+		}else if(((String) pokedexDropdown.getSelectedItem()).equals("Rot")) {
+			iconLabel.setIcon(new ImageIcon(getClass().getResource("/pokemon/view/images/Rot.png")));
+		}else if(((String) pokedexDropdown.getSelectedItem()).equals("Shaarji")) {
+			iconLabel.setIcon(new ImageIcon(getClass().getResource("/pokemon/view/images/Shaarji.jpg")));
+		}else if(((String) pokedexDropdown.getSelectedItem()).equals("Soggoth")) {
+			iconLabel.setIcon(new ImageIcon(getClass().getResource("/pokemon/view/images/Soggoth.jpg")));
+		}
 	}
 	
 	private void updatePokedexInfo(int index) {

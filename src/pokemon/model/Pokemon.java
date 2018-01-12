@@ -22,7 +22,7 @@ public abstract class Pokemon
 		Class<?> currentClass = this.getClass();
 		
 		while(currentClass.getSuperclass() != null) {
-			Class<?> [] pokemonTypes = getClass().getInterfaces();
+			Class<?> [] pokemonTypes = currentClass.getInterfaces();
 			types = new String[pokemonTypes.length];
 			
 			for(int i = 0; i < types.length; i++) {
