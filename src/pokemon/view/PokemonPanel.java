@@ -189,20 +189,19 @@ public class PokemonPanel extends JPanel
 	}
 	
 	private void updateImage() {
+		String path = "/pokemon/view/images/";
+		String defaultname = "pokeball";
+		String name = pokedexDropdown.getSelectedItem().toString();
+		String extension = ".png";
+		ImageIcon pokemonIcon;
 		
-		if(((String) pokedexDropdown.getSelectedItem()).equals("Cthun")) {
-			iconLabel.setIcon(new ImageIcon(getClass().getResource("/pokemon/view/images/Cthun.jpeg")));
-		}else if(((String) pokedexDropdown.getSelectedItem()).equals("Mukla")) {
-			iconLabel.setIcon(new ImageIcon(getClass().getResource("/pokemon/view/images/Mukla.jpg")));
-		}else if(((String) pokedexDropdown.getSelectedItem()).equals("Rip")) {
-			iconLabel.setIcon(new ImageIcon(getClass().getResource("/pokemon/view/images/Rip.png")));
-		}else if(((String) pokedexDropdown.getSelectedItem()).equals("Rot")) {
-			iconLabel.setIcon(new ImageIcon(getClass().getResource("/pokemon/view/images/Rot.png")));
-		}else if(((String) pokedexDropdown.getSelectedItem()).equals("Shaarji")) {
-			iconLabel.setIcon(new ImageIcon(getClass().getResource("/pokemon/view/images/Shaarji.jpg")));
-		}else if(((String) pokedexDropdown.getSelectedItem()).equals("Soggoth")) {
-			iconLabel.setIcon(new ImageIcon(getClass().getResource("/pokemon/view/images/Soggoth.jpg")));
+		try {
+			pokemonIcon = new ImageIcon(getClass().getResource(path + name + extension));
+		}catch(NullPointerException missingImageFile) {
+			pokemonIcon = new ImageIcon(getClass().getResource(path+defaultname+extension));
 		}
+		
+		iconLabel.setIcon(pokemonIcon);
 	}
 	
 	private void updatePokedexInfo(int index) {
