@@ -215,6 +215,11 @@ public class PokemonPanel extends JPanel
 		
 		descriptionArea.setText(appController.getPokedex().get(index).toString());
 		
+		typeArea.setText("");
+		for(String current : appController.getPokedex().get(index).getPokemonTypes()) {
+			typeArea.append(current + "\n");
+		}
+		
 	}
 	
 	private void setupComboBox()
