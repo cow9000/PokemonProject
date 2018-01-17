@@ -33,4 +33,8 @@ public class FileController
 			System.out.println("There was an error: " + error.getMessage());
 		}
 	}
+	
+	//public static String readPokemonFromFile() {
+		
+	//}
 }
